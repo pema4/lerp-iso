@@ -446,7 +446,7 @@
 
 							}
  ],
-						"originid" : "pat-9930",
+						"originid" : "pat-264",
 						"toolbaradditions" : [ "packagemanager", "browsegendsp" ],
 						"saved_attribute_attributes" : 						{
 							"default_plcolor" : 							{
@@ -743,7 +743,7 @@
 							}
 ,
 							"classnamespace" : "dsp.gen",
-							"rect" : [ 309.0, 100.0, 1127.0, 762.0 ],
+							"rect" : [ 309.0, 100.0, 1015.0, 1037.0 ],
 							"gridsize" : [ 15.0, 15.0 ],
 							"integercoordinates" : 1,
 							"boxes" : [ 								{
@@ -751,10 +751,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 12 @comment mod_time_mult",
 										"patching_rect" : [ 360.0, 255.0, 185.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-17",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -763,10 +763,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 13 @comment env_time_ms",
 										"patching_rect" : [ 405.0, 30.0, 174.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-16",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -775,10 +775,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 11 @comment mod_env_shape",
 										"patching_rect" : [ 330.0, 210.0, 191.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-10",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -787,10 +787,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 10 @comment amp_env_shape",
 										"patching_rect" : [ 300.0, 165.0, 191.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-6",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -800,9 +800,9 @@
 										"text" : "rate = attackTime / samplerate;\nexp(-log((1 + ratio) / ratio) / SAMPLERATE)",
 										"linecount" : 3,
 										"patching_rect" : [ 784.0, 651.0, 203.0, 47.0 ],
-										"numinlets" : 1,
+										"numoutlets" : 0,
 										"id" : "obj-18",
-										"numoutlets" : 0
+										"numinlets" : 1
 									}
 
 								}
@@ -811,10 +811,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 9 @comment mod_subquantize",
 										"patching_rect" : [ 270.0, 120.0, 191.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-15",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -823,10 +823,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 8 @comment param_y",
 										"patching_rect" : [ 240.0, 75.0, 143.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-14",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -835,10 +835,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 7 @comment param_x",
 										"patching_rect" : [ 210.0, 30.0, 143.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-13",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -847,10 +847,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 6 @comment alg_mod_lp",
 										"patching_rect" : [ 180.0, 255.0, 158.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-12",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -860,9 +860,9 @@
 										"text" : "Нужно ли для Latch передавать параметры как сигнал?\n- поступает миди-нота\n- поступает модуляция\n- нужно сматчить модуляцию с нотами",
 										"linecount" : 7,
 										"patching_rect" : [ 818.0, 333.0, 150.0, 100.0 ],
-										"numinlets" : 1,
+										"numoutlets" : 0,
 										"id" : "obj-11",
-										"numoutlets" : 0
+										"numinlets" : 1
 									}
 
 								}
@@ -871,10 +871,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 5 @comment alg_op_swap",
 										"patching_rect" : [ 150.0, 210.0, 167.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-9",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -883,10 +883,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 4 @comment alg_car_fb",
 										"patching_rect" : [ 120.0, 165.0, 152.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-8",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -895,10 +895,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 3 @comment alg_mod_fb",
 										"patching_rect" : [ 90.0, 120.0, 159.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-7",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -907,10 +907,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 2 @comment freq",
 										"patching_rect" : [ 60.0, 75.0, 117.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-3",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -919,10 +919,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1 @comment trigger",
 										"patching_rect" : [ 30.0, 30.0, 130.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"numinlets" : 0,
+										"numoutlets" : 1,
 										"id" : "obj-1",
-										"numoutlets" : 1
+										"outlettype" : [ "" ],
+										"numinlets" : 0
 									}
 
 								}
@@ -931,9 +931,9 @@
 										"maxclass" : "newobj",
 										"text" : "out 2",
 										"patching_rect" : [ 600.0, 1020.0, 35.0, 22.0 ],
-										"numinlets" : 1,
+										"numoutlets" : 0,
 										"id" : "obj-2",
-										"numoutlets" : 0
+										"numinlets" : 1
 									}
 
 								}
@@ -941,14 +941,14 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 30.0, 315.0, 688.0, 674.0 ],
-										"outlettype" : [ "", "" ],
+										"numoutlets" : 2,
+										"id" : "obj-5",
 										"fontname" : "<Monospaced>",
+										"outlettype" : [ "", "" ],
 										"fontface" : 0,
 										"numinlets" : 20,
-										"id" : "obj-5",
-										"numoutlets" : 2,
 										"fontsize" : 12.0,
-										"code" : "smooth(x) {\n\tHistory res(0);\n\tres = mix(x, res, 0.995);\n\treturn res;\n}\n\nquantize_tune(unquantized_tune, max_divisor) {\n\tif (max_divisor <= 0) return unquantized_tune;\n\n\toptimal_tune = round(unquantized_tune);\n\tmin_distance = abs(optimal_tune - unquantized_tune);\n\tfor (divisor = 2; divisor < max_divisor; divisor += 1) {\n\t\tcurrent_tune = round(unquantized_tune, 1 / divisor);\n\t\tcurrent_distance = abs(current_tune - unquantized_tune);\n\t\tif (current_distance < min_distance) {\n\t\t\toptimal_tune = current_tune;\n\t\t\tmin_distance = current_distance;\n\t\t}\n\t}\n\n\treturn optimal_tune;\n}\n\nunpack_tune(param_y, max_divisor) {\n\tunquantized_mod_tune = 1 + 8 * param_y;\n\tmod_tune = quantize_tune(unquantized_mod_tune, max_divisor);\n\n\tcar_tune = 1;\n\treturn mod_tune, car_tune;\n}\n\nosc(ph) {\n\treturn sin(2 * PI * ph);\n}\n\nop(freq, trigger, fb_amt, mod) {\n\tHistory phase;\n\tphase = wrap(phasor(freq, trigger) + osc(phase) * fb_amt);\n\treturn osc(phase + mod);\n}\n\nar_envelope(trigger, attack_ms, attack_curve, decay_ms, decay_curve, loop) {\n\t// 0 - idle, 1 - attack, 2 - decay\n\tHistory state(0);\n\tHistory value(0);\n\tHistory attack_time, decay_cutoff, decay_mult;\r\n\tif (trigger) {\r\n\t\tattack_time = mstosamps(attack_ms);\r\n\t\tdecay_cutoff = clip(decay_curve, 0.00000001, 1.0);\r\n\t\tdecay_mult = exp(ln(decay_cutoff / (1 + decay_cutoff)) / mstosamps(decay_ms));\r\n\t}\n\t\n\tif (trigger == 1) {\n\t\tstate = 1;\n\t\tvalue = 0;\n\t}\n\t\n\tif (state == 1) {\n\t\tvalue += (1 / attack_time);\n\t\tif (value > 1) {\n\t\t\tvalue = 1;\n\t\t\tstate = 2;\n\t\t}\n\t} else if (state == 2) {\r\n\t\tvalue = value * decay_mult;\r\n\t\tresult = (1 + decay_cutoff) * value - decay_cutoff;\n\t\tif (result < decay_cutoff) {\n\t\t\tvalue = 0;\n\t\t\tstate = loop == 1;\n\t\t}\r\n\t\treturn result;\n\t}\n\t\n\treturn clip(value);\n}\r\n\r\nmod_envelope(trigger, shape, time_ms) {\r\n\tattack_ms = 1;\r\n\tattack_curve = 0.5;\r\n\tdecay_curve = 1e-6;\r\n\tif (shape < 0.25) {\r\n\t\tattack_ms = 1;\r\n\t\tdecay_curve = pow(10, mix(-6, -3, scale(shape, 0, 0.25, 0, 1)));\r\n\t} else if (shape < 0.5) {\r\n\t\tattack_ms = mix(1, max(1, time_ms / 2), (shape - 0.25) * 2);\r\n\t\tdecay_curve = 1e-3;\r\n\t} else if (shape < 0.75) {\r\n\t\tattack_ms = mix(1, max(1, time_ms / 2), (shape - 0.25) * 2);\r\n\t\tdecay_curve = 1e-3;\r\n\t} else {\r\n\t\tattack_ms = time_ms / 2;\r\n\t\tdecay_curve = pow(10, mix(-3, -1, scale(shape, 0.75, 1, 0, 1)));\r\n\t}\r\n\tdecay_ms = time_ms - attack_ms;\r\n\treturn 1 - ar_envelope(trigger, attack_ms, attack_curve, decay_ms, decay_curve, 1);\r\n}\r\n\r\namp_envelope(trigger, shape, time_ms) {\r\n\tattack_ms = 1;\r\n\tattack_curve = 0.5;\r\n\tdecay_curve = 1e-6;\r\n\tif (shape < 0.25) {\r\n\t\tattack_ms = 1;\r\n\t\tdecay_curve = pow(10, mix(-6, -3, scale(shape, 0, 0.25, 0, 1)));\r\n\t} else if (shape < 0.5) {\r\n\t\tattack_ms = mix(1, max(1, time_ms / 2), (shape - 0.25) * 2);\r\n\t\tdecay_curve = 1e-3;\r\n\t} else if (shape < 0.75) {\r\n\t\tattack_ms = mix(1, max(1, time_ms / 2), (shape - 0.25) * 2);\r\n\t\tdecay_curve = 1e-3;\r\n\t} else {\r\n\t\tattack_ms = time_ms / 2;\r\n\t\tdecay_curve = pow(10, mix(-3, -1, scale(shape, 0.75, 1, 0, 1)));\r\n\t}\r\n\tdecay_ms = time_ms - attack_ms;\r\n\treturn ar_envelope(trigger, attack_ms, attack_curve, decay_ms, decay_curve, 0);\r\n}\n\nHistory car_ph, mod_ph;\n\ntrigger = in1;\nbase_freq = in2;\nalg_mod_fb = latch(in3, trigger);\nalg_car_fb = latch(in4, trigger);\nalg_op_swap = latch(in5, trigger);\nalg_mod_lp = latch(in6, trigger);\nparam_x = latch(in7, trigger);\nparam_y = latch(in8, trigger);\nmod_subquantize = latch(in9, trigger);\r\namp_env_shape = latch(in10, trigger);\r\nmod_env_shape = latch(in11, trigger);\r\nmod_time_mult = latch(in12, trigger);\r\nenv_time_ms = max(latch(in13, trigger), 2);\n_unused = in20;\n\nmod = param_x;\nmod_tune, car_tune = unpack_tune(param_y, mod_subquantize);\nmod_osc = mix(\n\top(base_freq * mod_tune, trigger, alg_mod_fb * -0.25, 0),\n\top(base_freq * car_tune, trigger, alg_mod_fb * -0.25, 0),\n\talg_op_swap\n);\r\n\r\nmod_osc *= mod_envelope(trigger, mod_env_shape, env_time_ms * pow(mix(mod_time_mult, 1, 0.25), 2));\ncar_osc = mix(\n\top(base_freq * car_tune, trigger, alg_car_fb * 0.333 * mod_osc, mod_osc * mod),\n\top(base_freq * mod_tune, trigger, alg_car_fb * 0.333 * mod_osc, mod_osc * mod),\n\talg_op_swap\n);\n\namp = amp_envelope(trigger, amp_env_shape, env_time_ms);\nout1 = amp;\n\nout2 = amp * car_osc;\n"
+										"code" : "ar(trigger, attack_ms, attack_curve, decay_ms, decay_curve, loop) {\n\t// 0 - idle, 1 - attack, 2 - decay\n\tHistory state(0);\n\tHistory value(0);\n\tHistory attack_time, decay_cutoff, decay_mult;\r\n\tif (trigger) {\r\n\t\tattack_time = mstosamps(attack_ms);\r\n\t\tdecay_cutoff = clip(decay_curve, 0.00000001, 1.0);\r\n\t\tdecay_mult = exp(ln(decay_cutoff / (1 + decay_cutoff)) / mstosamps(decay_ms));\r\n\t}\n\t\n\tif (trigger == 1) {\n\t\tstate = 1;\n\t\tvalue = 0;\n\t}\n\t\n\tif (state == 1) {\n\t\tvalue += (1 / attack_time);\n\t\tif (value > 1) {\n\t\t\tvalue = 1;\n\t\t\tstate = 2;\n\t\t}\n\t} else if (state == 2) {\r\n\t\tvalue = value * decay_mult;\r\n\t\tresult = (1 + decay_cutoff) * value - decay_cutoff;\n\t\tif (result < decay_cutoff) {\n\t\t\tvalue = 0;\n\t\t\tstate = loop == 1;\n\t\t}\r\n\t\treturn result;\n\t}\n\t\n\treturn clip(value);\n}\r\n\r\nmod_envelope(trigger, shape, time_ms) {\r\n\tattack_ms = 1;\r\n\tattack_curve = 0.5;\r\n\tdecay_curve = 1e-6;\r\n\tif (shape < 0.25) {\r\n\t\tattack_ms = 1;\r\n\t\tdecay_curve = pow(10, mix(-6, -3, scale(shape, 0, 0.25, 0, 1)));\r\n\t} else if (shape < 0.5) {\r\n\t\tattack_ms = mix(1, max(1, time_ms / 2), (shape - 0.25) * 2);\r\n\t\tdecay_curve = 1e-3;\r\n\t} else if (shape < 0.75) {\r\n\t\tattack_ms = mix(1, max(1, time_ms / 2), (shape - 0.25) * 2);\r\n\t\tdecay_curve = 1e-3;\r\n\t} else {\r\n\t\tattack_ms = time_ms / 2;\r\n\t\tdecay_curve = pow(10, mix(-3, -1, scale(shape, 0.75, 1, 0, 1)));\r\n\t}\r\n\tdecay_ms = time_ms - attack_ms;\r\n\treturn 1 - ar(trigger, attack_ms, attack_curve, decay_ms, decay_curve, 1);\r\n}\r\n\r\namp_envelope(trigger, shape, time_ms) {\r\n\tattack_ms = 1;\r\n\tattack_curve = 0.5;\r\n\tdecay_curve = 1e-6;\r\n\tif (shape < 0.25) {\r\n\t\tattack_ms = 1;\r\n\t\tdecay_curve = pow(10, mix(-6, -3, scale(shape, 0, 0.25, 0, 1)));\r\n\t} else if (shape < 0.5) {\r\n\t\tattack_ms = mix(1, max(1, time_ms / 2), (shape - 0.25) * 2);\r\n\t\tdecay_curve = 1e-3;\r\n\t} else if (shape < 0.75) {\r\n\t\tattack_ms = mix(1, max(1, time_ms / 2), (shape - 0.25) * 2);\r\n\t\tdecay_curve = 1e-3;\r\n\t} else {\r\n\t\tattack_ms = time_ms / 2;\r\n\t\tdecay_curve = pow(10, mix(-3, -1, scale(shape, 0.75, 1, 0, 1)));\r\n\t}\r\n\tdecay_ms = time_ms - attack_ms;\r\n\treturn ar(trigger, attack_ms, attack_curve, decay_ms, decay_curve, 0);\r\n}\r\n\r\nquantize_tune(unquantized_tune, max_divisor) {\n\tif (max_divisor <= 0) return unquantized_tune;\n\n\toptimal_tune = round(unquantized_tune);\n\tmin_distance = abs(optimal_tune - unquantized_tune);\n\tfor (divisor = 2; divisor < max_divisor; divisor += 1) {\n\t\tcurrent_tune = round(unquantized_tune, 1 / divisor);\n\t\tcurrent_distance = abs(current_tune - unquantized_tune);\n\t\tif (current_distance < min_distance) {\n\t\t\toptimal_tune = current_tune;\n\t\t\tmin_distance = current_distance;\n\t\t}\n\t}\n\n\treturn optimal_tune;\n}\n\nunpack_tune(param_y, max_divisor) {\n\tunquantized_mod_tune = 1 + 8 * param_y;\n\tmod_tune = quantize_tune(unquantized_mod_tune, max_divisor);\n\n\tcar_tune = 1;\n\treturn mod_tune, car_tune;\n}\r\n\r\nosc(ph) {\n\treturn sin(2 * PI * ph);\n}\n\nop(freq, trigger, fb_amt, mod) {\n\tHistory phase;\n\tphase = wrap(phasor(freq, trigger) + osc(phase) * fb_amt);\n\treturn osc(phase + mod);\n}\n\ntrigger = in1;\nbase_freq = in2;\nalg_mod_fb = latch(in3, trigger);\nalg_car_fb = latch(in4, trigger);\nalg_op_swap = latch(in5, trigger);\nalg_mod_lp = latch(in6, trigger);\nparam_x = latch(in7, trigger);\nparam_y = latch(in8, trigger);\nmod_subquantize = latch(in9, trigger);\r\namp_env_shape = latch(in10, trigger);\r\nmod_env_shape = latch(in11, trigger);\r\nmod_time_mult = latch(in12, trigger);\r\nenv_time_ms = max(latch(in13, trigger), 2);\n_unused = in20;\n\nmod = param_x;\nmod_tune, car_tune = unpack_tune(param_y, mod_subquantize);\nmod_osc = mix(\n\top(base_freq * mod_tune, trigger, alg_mod_fb * -0.25, 0),\n\top(base_freq * car_tune, trigger, alg_mod_fb * -0.25, 0),\n\talg_op_swap\n);\r\n\r\nmod_osc *= mod_envelope(trigger, mod_env_shape, env_time_ms * pow(mix(mod_time_mult, 1, 0.25), 2));\ncar_osc = mix(\n\top(base_freq * car_tune, trigger, alg_car_fb * 0.333 * mod_osc, mod_osc * mod),\n\top(base_freq * mod_tune, trigger, alg_car_fb * 0.333 * mod_osc, mod_osc * mod),\n\talg_op_swap\n);\n\namp = amp_envelope(trigger, amp_env_shape, env_time_ms);\r\n\nout1 = amp;\nout2 = amp * car_osc;\n"
 									}
 
 								}
@@ -957,101 +957,17 @@
 										"maxclass" : "newobj",
 										"text" : "out 1",
 										"patching_rect" : [ 30.0, 1020.0, 35.0, 22.0 ],
-										"numinlets" : 1,
+										"numoutlets" : 0,
 										"id" : "obj-4",
-										"numoutlets" : 0
+										"numinlets" : 1
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-17", 0 ],
-										"destination" : [ "obj-5", 11 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-16", 0 ],
-										"destination" : [ "obj-5", 12 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-10", 0 ],
-										"destination" : [ "obj-5", 10 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-6", 0 ],
-										"destination" : [ "obj-5", 9 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-15", 0 ],
-										"destination" : [ "obj-5", 8 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-14", 0 ],
-										"destination" : [ "obj-5", 7 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-13", 0 ],
-										"destination" : [ "obj-5", 6 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-12", 0 ],
-										"destination" : [ "obj-5", 5 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-9", 0 ],
-										"destination" : [ "obj-5", 4 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-8", 0 ],
-										"destination" : [ "obj-5", 3 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-5", 2 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-5", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-3", 0 ],
-										"destination" : [ "obj-5", 1 ]
+										"source" : [ "obj-5", 1 ],
+										"destination" : [ "obj-2", 0 ]
 									}
 
 								}
@@ -1064,13 +980,97 @@
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-5", 1 ],
-										"destination" : [ "obj-2", 0 ]
+										"source" : [ "obj-3", 0 ],
+										"destination" : [ "obj-5", 1 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-5", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-5", 2 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-8", 0 ],
+										"destination" : [ "obj-5", 3 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-9", 0 ],
+										"destination" : [ "obj-5", 4 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-12", 0 ],
+										"destination" : [ "obj-5", 5 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-13", 0 ],
+										"destination" : [ "obj-5", 6 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-14", 0 ],
+										"destination" : [ "obj-5", 7 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-15", 0 ],
+										"destination" : [ "obj-5", 8 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-6", 0 ],
+										"destination" : [ "obj-5", 9 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-10", 0 ],
+										"destination" : [ "obj-5", 10 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-16", 0 ],
+										"destination" : [ "obj-5", 12 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-17", 0 ],
+										"destination" : [ "obj-5", 11 ]
 									}
 
 								}
  ],
-							"originid" : "pat-9934",
+							"originid" : "pat-268",
 							"saved_attribute_attributes" : 							{
 								"default_plcolor" : 								{
 									"expression" : ""
@@ -1090,7 +1090,7 @@
 					"patching_rect" : [ 390.0, 450.0, 379.0, 22.0 ],
 					"text" : "mc.gen~ @title 4-nodes @chans 64",
 					"varname" : "gen~_AA[1]",
-					"wrapper_uniquekey" : "u990009986"
+					"wrapper_uniquekey" : "u835009809"
 				}
 
 			}
@@ -1645,8 +1645,15 @@
 
 			}
  ],
-		"originid" : "pat-9926",
-		"toolbaradditions" : [ "packagemanager", "browsegendsp" ]
+		"originid" : "pat-260",
+		"toolbaradditions" : [ "packagemanager", "browsegendsp" ],
+		"saved_attribute_attributes" : 		{
+			"default_plcolor" : 			{
+				"expression" : ""
+			}
+
+		}
+
 	}
 
 }
