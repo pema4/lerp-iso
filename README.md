@@ -19,4 +19,4 @@ git config --local diff.als.textconv "python3 maxdevtools/maxdiff/als_textconv.p
 git config --local diff.als.binary true
 ```
 
-Currently, Glider requires Max 9 to run.
+Currently, Iso requires Max 9 to run.
