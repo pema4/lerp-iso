@@ -2,6 +2,8 @@
 
 Macro-synthesizer for Ableton Live 12.
 
+![iso-large](images/iso-large.png)
+
 ## Setup
 
 ```shell
