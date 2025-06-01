@@ -10,10 +10,58 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 540.0, 125.0, 1653.0, 1127.0 ],
+		"rect" : [ 34.0, 100.0, 1402.0, 762.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"integercoordinates" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 806.0, 300.0, 56.0, 22.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-3",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 723.0, 300.0, 56.0, 22.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 694.0, 216.0, 56.0, 22.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-73",
 					"maxclass" : "newobj",
@@ -246,7 +294,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 1184.0, 150.0, 987.0, 618.0 ],
+						"rect" : [ 449.0, 150.0, 987.0, 618.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"integercoordinates" : 1,
 						"boxes" : [ 							{
@@ -341,7 +389,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "weight(px, py, cx, cy, r)\n{\n    dx = px - cx;\n    dy = py - cy;\n    d = hypot(dx, dy);\n    return max(0, 1 - d / r);\n}\r\n\r\nHistory _out1, _out2, _out3, _out4, _out5, _out6, _out7;\n\nif (change(in1) || change(in2)) {\r\n\tx = scale(in1, 52.5238, 59.8136, 0, 1);\r\n\ty = scale(in2, 24.1831, 39.6133, 0, 1);\r\n\n    _out1 = weight(x, y, 0.087719286742963, 0.213440212699556, 0.417449417433788);\r\n\t_out1 *= 0.333;\n    _out2 = weight(x, y, 0.764666696946808, 0.125806416935287, 0.700000000000000);\r\n\t_out2 *= 0.25;\n    _out3 = weight(x, y, 0.118908369541168, 0.835815144568374, 0.442726233263606);\n    _out4 = weight(x, y, 0.707602307357286, 0.900725413536288, 0.379266906276192);\n\n    _out5 = weight(x, y, 0.39, 0.7, 0.261999994814396) +\n        weight(x, y, 0.426000089347362, 0.174000065326691, 0.225999995172024) +\n        weight(x, y, 0.7, 0.27, 0.293999997675419) +\r\n\t\tweight(x, y, 0.85400009572506, 0.550000070929527, 0.264000000953674);\n    _out6 = weight(x, y, 0.714000093638897, 0.838000075221062, 0.268000001013279) +\n        weight(x, y, 0.070000084042549, 1.0, 0.26000000089407) +\n        weight(x, y, 0.419473898410797, 0.411052796840668, 0.111999998688698) +\n        weight(x, y, 0.858000095784664, 0.102000064253807, 0.127999998927116);\n    _out7 = weight(x, y, 0.046000083684921, 0.586000071465969, 0.143999999165535) +\n        weight(x, y, 0.654000092744827, 0.69000007301569, 0.103999998569488) +\n        weight(x, y, 0.186000085771084, 0.40600006878376, 0.167999999523163) +\r\n\t\tweight(x, y, 0.1140000846982, 0.106000064313412, 0.191999999880791);\n}\n\nout1, out2, out3, out4, out5, out6, out7 = _out1, _out2, _out3, _out4, _out5, _out6, _out7;",
+									"code" : "weight(px, py, cx, cy, r)\n{\n    dx = px - cx;\n    dy = py - cy;\n    d = hypot(dx, dy);\n    return max(0, 1 - d / r);\n}\r\n\r\nHistory _out1, _out2, _out3, _out4, _out5, _out6, _out7;\n\nif (change(in1) || change(in2)) {\r\n\ty = scale(in1, 52.5238, 59.8136, 1, 0);\r\n\tx = scale(in2, 24.1831, 39.6133, 0, 1);\r\n\n    _out1 = weight(x, y, 0.087719286742963, 0.213440212699556, 0.417449417433788);\r\n\t_out1 *= 0.333;\n    _out2 = weight(x, y, 0.764666696946808, 0.125806416935287, 0.700000000000000);\r\n\t_out2 *= 0.25;\n    _out3 = weight(x, y, 0.118908369541168, 0.835815144568374, 0.442726233263606);\n    _out4 = weight(x, y, 0.707602307357286, 0.900725413536288, 0.379266906276192);\n\n    _out5 = weight(x, y, 0.39, 0.7, 0.261999994814396) +\n        weight(x, y, 0.426000089347362, 0.174000065326691, 0.225999995172024) +\n        weight(x, y, 0.7, 0.27, 0.293999997675419) +\r\n\t\tweight(x, y, 0.85400009572506, 0.550000070929527, 0.264000000953674);\n    _out6 = weight(x, y, 0.714000093638897, 0.838000075221062, 0.268000001013279) +\n        weight(x, y, 0.070000084042549, 1.0, 0.26000000089407) +\n        weight(x, y, 0.419473898410797, 0.411052796840668, 0.111999998688698) +\n        weight(x, y, 0.858000095784664, 0.102000064253807, 0.127999998927116);\n    _out7 = weight(x, y, 0.046000083684921, 0.586000071465969, 0.143999999165535) +\n        weight(x, y, 0.654000092744827, 0.69000007301569, 0.103999998569488) +\n        weight(x, y, 0.186000085771084, 0.40600006878376, 0.167999999523163) +\r\n\t\tweight(x, y, 0.1140000846982, 0.106000064313412, 0.191999999880791);\n}\n\nout1, out2, out3, out4, out5, out6, out7 = _out1, _out2, _out3, _out4, _out5, _out6, _out7;",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -946,7 +994,6 @@
 						"rect" : [ 189.0, 100.0, 742.0, 762.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"integercoordinates" : 1,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-22",
@@ -1160,6 +1207,11 @@
 
 					}
 ,
+					"saved_object_attributes" : 					{
+						"editing_bgcolor" : [ 0.279471418544607, 0.279471350143365, 0.279471368104493, 1.0 ],
+						"locked_bgcolor" : [ 0.279471418544607, 0.279471350143365, 0.279471368104493, 1.0 ]
+					}
+,
 					"text" : "p Frequency"
 				}
 
@@ -1223,9 +1275,9 @@
 										"maxclass" : "newobj",
 										"text" : "out 3",
 										"patching_rect" : [ 702.0, 1050.0, 35.0, 22.0 ],
+										"id" : "obj-22",
 										"numinlets" : 1,
-										"numoutlets" : 0,
-										"id" : "obj-22"
+										"numoutlets" : 0
 									}
 
 								}
@@ -1234,10 +1286,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 28 @comment CTL_MOD_MOD_LOCK",
 										"patching_rect" : [ 945.0, 165.0, 234.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-19"
+										"id" : "obj-19",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1246,10 +1298,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 16 @comment ALG_MOD_LOCK",
 										"patching_rect" : [ 416.0, 255.0, 200.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-17"
+										"id" : "obj-17",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1258,10 +1310,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 27 @comment CTL_AMP_MOD_LOCK",
 										"patching_rect" : [ 615.0, 165.0, 232.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-18"
+										"id" : "obj-18",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1270,10 +1322,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 26 @comment CTL_TIME_SCALE",
 										"patching_rect" : [ 921.0, 120.0, 207.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-26"
+										"id" : "obj-26",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1282,10 +1334,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 25 @comment CTL_AMP_REL",
 										"patching_rect" : [ 896.0, 75.0, 188.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-25"
+										"id" : "obj-25",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1294,10 +1346,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 24 @comment CTL_AMP_ATK",
 										"patching_rect" : [ 870.0, 30.0, 187.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-24"
+										"id" : "obj-24",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1306,10 +1358,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 6 @comment mpe_slide",
 										"patching_rect" : [ 159.0, 255.0, 151.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-12"
+										"id" : "obj-12",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1318,10 +1370,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 23 @comment CTL_MOD_RATIO_QUANTIZE",
 										"patching_rect" : [ 596.0, 120.0, 270.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-23"
+										"id" : "obj-23",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1330,10 +1382,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 22 @comment CTL_MOD_RATIO",
 										"patching_rect" : [ 570.0, 75.0, 203.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-20"
+										"id" : "obj-20",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1342,10 +1394,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 21 @comment CTL_MOD_AMT",
 										"patching_rect" : [ 545.0, 30.0, 192.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-16"
+										"id" : "obj-16",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1354,10 +1406,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 15 @comment ALG_OP_ROUTING",
 										"patching_rect" : [ 390.0, 210.0, 212.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-10"
+										"id" : "obj-10",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1366,10 +1418,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 14 @comment ALG_CAR_ENV",
 										"patching_rect" : [ 365.0, 165.0, 189.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-6"
+										"id" : "obj-6",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1378,10 +1430,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 13 @comment ALG_MOD_ENV",
 										"patching_rect" : [ 339.0, 120.0, 192.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-15"
+										"id" : "obj-15",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1390,10 +1442,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 12 @comment ALG_CAR_FB",
 										"patching_rect" : [ 313.0, 75.0, 180.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-14"
+										"id" : "obj-14",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1402,10 +1454,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 11 @comment ALG_MOD_FB",
 										"patching_rect" : [ 287.0, 30.0, 182.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-13"
+										"id" : "obj-13",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1415,9 +1467,9 @@
 										"text" : "Нужно ли для Latch передавать параметры как сигнал?\n- поступает миди-нота\n- поступает модуляция\n- нужно сматчить модуляцию с нотами",
 										"linecount" : 7,
 										"patching_rect" : [ 945.0, 225.0, 150.0, 100.0 ],
+										"id" : "obj-11",
 										"numinlets" : 1,
-										"numoutlets" : 0,
-										"id" : "obj-11"
+										"numoutlets" : 0
 									}
 
 								}
@@ -1426,10 +1478,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 5 @comment mpe_press",
 										"patching_rect" : [ 133.0, 210.0, 155.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-9"
+										"id" : "obj-9",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1438,10 +1490,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 4 @comment velocity",
 										"patching_rect" : [ 107.0, 165.0, 136.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-8"
+										"id" : "obj-8",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1450,10 +1502,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 3 @comment note_freq",
 										"patching_rect" : [ 81.0, 120.0, 147.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-7"
+										"id" : "obj-7",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1462,10 +1514,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 2 @comment gate",
 										"patching_rect" : [ 56.0, 75.0, 119.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-3"
+										"id" : "obj-3",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1474,10 +1526,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1 @comment trig",
 										"patching_rect" : [ 30.0, 30.0, 113.0, 22.0 ],
-										"numinlets" : 0,
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"id" : "obj-1"
+										"id" : "obj-1",
+										"numinlets" : 0,
+										"numoutlets" : 1
 									}
 
 								}
@@ -1486,9 +1538,9 @@
 										"maxclass" : "newobj",
 										"text" : "out 2",
 										"patching_rect" : [ 600.0, 1050.0, 35.0, 22.0 ],
+										"id" : "obj-2",
 										"numinlets" : 1,
-										"numoutlets" : 0,
-										"id" : "obj-2"
+										"numoutlets" : 0
 									}
 
 								}
@@ -1496,14 +1548,14 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 30.0, 345.0, 688.0, 674.0 ],
-										"numinlets" : 28,
-										"fontsize" : 12.0,
-										"numoutlets" : 3,
-										"fontname" : "<Monospaced>",
 										"outlettype" : [ "", "", "" ],
-										"fontface" : 0,
 										"id" : "obj-5",
-										"code" : "// ---------- Basic DSP blocks ----------\n\n\n/**\n * Attack-release envelope from Lode - https://github.com/fors-fm/lode\n */\nar(trig, gate, attack, release, release_lin_exp) {\n\tHistory env(0), stage(0),\n\t\t\tatk_rate(0), atk_coeff(0), atk_offset(0),\n\t\t\trel_rate(0), rel_coeff(0), rel_slope(0), rel_offset(0);\n\t\n\tif (change(attack) != 0) {\n\t\t// time in seconds\n\t\tatk_rate = samplerate * attack;\n\t\t\n\t\t// calculate coefficients\n\t\tatk_offset = 1 / atk_rate;\n\t}\n\t\n\tif (change(release) != 0 || change(release_lin_exp) != 0) {\n\t\t// time in seconds\n\t\trel_rate = samplerate * release;\n\t\t\n\t\t// slope 0 = linear, slope -n = log/exp\n\t\trel_slope = exp(-8 * release_lin_exp);\n\t\t\n\t\t// calculate coefficients\n\t\trel_coeff = exp(-log((1 + rel_slope) / rel_slope) / rel_rate);\n\t\t// rel_offset = -rel_slope * (1 - rel_coeff);\n\t}\n\t\n\tif (trig) {\n\t\trel_offset = -rel_slope * (1 - rel_coeff);\n\n\t\t// reset & trigger envelope\n\t\tstage = 1;\n\t}\t\n\n\t// stage 0 = idle, 1 = attack, 2 = decay\n\tif (stage == 0) {\n\t\tenv = 0;\n\t} else if (stage == 1) {\n\t\tenv = atk_offset + env;\n\t\t\n\t\tif (!gate) {\n\t\t\tstage = 2;\n\t\t}\n\t\t\n\t\tif (env >= 1 || attack <= 0) {\n\t\t\tenv = 1;\n\t\t\tstage = 2;\n\t\t}\n\t} else {\n\t\tenv = rel_offset + env * rel_coeff;\n\t\t\n\t\tif (env <= 0 || release <= 0) {\n\t\t\tenv = 0;\n\t\t\tstage = 0;\n\t\t}\n\t}\n\treturn env;\n}\n\nar_loop(trig, gate, attack, release, release_lin_exp) {\n\tHistory trigged(0), env(0);\n\t\n\tif (trig) trigged = 1;\n\tif (!gate) trigged = 0;\n\n\ttrig_loop = trig || gate && env == 0;\n\tenv = ar(trig_loop, gate, attack, release, release_lin_exp);\n\treturn env, trig_loop;\n}\n\n/**\n * Attack-hold-release envelope from Lode - https://github.com/fors-fm/lode\n */\nahr(trig, gate, attack, release) {\n\tHistory env(0), stage(0), trigged(0), gating(0),\n\t\t\tatk_rate(0), atk_coeff(0), atk_offset(0),\n\t\t\trel_rate(0), rel_coeff(0), rel_offset(0);\n\t\t\n\tif (trig) {\n\t\tif (gate && trigged) {\n\t\t\t// do nothing\n\t\t} else {\n\t\t\ttrigged = 1;\n\t\t\t\n\t\t\t// rate in seconds\n\t\t\tatk_rate = samplerate * attack;\n\t\t\trel_rate = samplerate * release;\n\t\t\n\t\t\t// slope 0 = linear, slope -n = log/exp\n\t\t\trel_slope = exp(-8);\n\t\t\n\t\t\t// calculate coefficients\n\t\t\tatk_offset = 1 / atk_rate;\n\t\t\n\t\t\trel_coeff = exp(-log((1 + rel_slope) / rel_slope) / rel_rate);\n\t\t\trel_offset = -rel_slope * (1 - rel_coeff);\n\t\t\n\t\t\t// reset & trigger envelope\n\t\t\tstage = 1;\n\t\t}\n\t}\t\n\n\t// stage 0 = idle, 1 = attack, 2 = decay\n\tif (stage == 0) {\n\t\tenv = 0;\n\t} else if (gate && trigged) {\n \t\tif (stage == 1) {\n\t\t\tenv = atk_offset + env;\n\t\t\n\t\t\tif (env >= 1 || attack <= 0) {\n\t\t\t\tenv = 1;\n\t\t\t\tstage = 2;\n\t\t\t}\n\t\t} else {\n\t\t\tenv = env;\n\t\t}\n\t} else {\n\t\ttrigged = 0;\n\t\t\n\t\tenv = rel_offset + env * rel_coeff;\n\t\t\n\t\tif (env <= 0 || release <= 0) {\n\t\t\tenv = 0;\n\t\t\tstage = 0;\n\t\t}\n\t} \n\treturn env, trigged;\n}\n\n// branchless phasor\n\nph(freq) {\n\tHistory phase(0);\n\t\n\tinc = freq / samplerate;\n\t\n\tphase += inc;\n\tphase -= phase >= 1;\n\t\n\treturn phase;\n}\n\n// ---------- Iso-specific blocks ----------\n\n\n/**\n * Morphable looping envelope.\n */\niso_mod_envelope(trig, shape, time_scale) {\n\tHistory attack(0), release(0), release_lin_exp(0);\n\t\n\tif (change(shape) != 0 || change(time_scale) != 0) {\n\t\tattack = (0.2 + 0.18 * cycle(2 * shape - 0.25, index=\"phase\")) * time_scale;\n\t\trelease = (0.6 + 0.45 * cycle(3.42 * shape - 0.02, index=\"phase\")) * time_scale;\n\t\trelease_lin_exp = 0.5 + 0.5 * cycle(1.283 * shape + 0.504, index=\"phase\");\n\t}\n\t\n\tenv = ar_loop(trig, 1, attack, release, 0.1);\n\n\treturn mix(1 - env, 1, shape);\n}\n\n/**\n * Morphable looping envelope.\n */\niso_car_envelope(trig, shape, time_scale) {\n\tHistory attack(0), release(0), release_lin_exp(0);\n\t\n\tif (change(shape) != 0 || change(time_scale) != 0) {\n\t\tattack = (0.3 + 0.26 * cycle(2.2 * shape + 0.166, index=\"phase\")) * time_scale;\n\t\trelease = (1.4 + 0.65 * cycle(1.982 * shape - 0.143, index=\"phase\")) * time_scale;\n\t\trelease_lin_exp = 0.6 + 0.4 * cycle(1.756 * shape - 0.127, index=\"phase\");\n\t}\n\t\n\tenv = ar_loop(trig, 1, attack, release, 0.1);\n\r\n\tscaled_env = selector(\r\n\t\tint(2 * shape + 1),\r\n\t\tmix(1 - env, 1, 2 * shape),\r\n\t\tmix(1, env, 2 * shape - 1)\r\n\t);\n\treturn scale(scaled_env, 0, 1, 0.4, 1);\n}\n\niso_op(trig, freq, fb_amt, mod) {\n\tHistory phase(0);\r\n\tphase *= 1 - trig;\n\tphase = phasor(freq, trig) + cycle(phase - 0.25, index=\"phase\") * fb_amt;\n\treturn cycle(phase - 0.25 + mod, index=\"phase\");\n}\n\niso_mix_oscs(osc, osc_detuned, op_routing) {\n\tif (op_routing >= 0) {\n\t\t// OP Swap\n\t\treturn mix(osc, osc_detuned, op_routing);\n\t} else {\n\t\t// PWM\n\t\treturn osc - osc_detuned;\n\t}\n}\n\ntrig = int(in1);\ngate = in2;\nnote_freq = in3;\nvelocity = in1;\nmpe_press = in5;\nmpe_slide = in6;\n\nALG_MOD_LOCK = int(in16);\nALG_MOD_FB = latch(in11, trig || ALG_MOD_LOCK);\nALG_CAR_FB = latch(in12, trig || ALG_MOD_LOCK);\nALG_MOD_ENV = latch(in13, trig || ALG_MOD_LOCK);\nALG_CAR_ENV = latch(in14, trig || ALG_MOD_LOCK);\nALG_OP_ROUTING = latch(in15, trig || ALG_MOD_LOCK);\n\nCTL_MOD_MOD_LOCK = int(in28);\nCTL_MOD_AMT = latch(in21, trig || CTL_MOD_MOD_LOCK);\nCTL_MOD_RATIO = latch(in22, trig || CTL_MOD_MOD_LOCK);\n\nCTL_AMP_MOD_LOCK = int(in27);\nCTL_AMP_ATK = latch(in24, trig || CTL_AMP_MOD_LOCK);\nCTL_AMP_REL = latch(in25, trig || CTL_AMP_MOD_LOCK);\nCTL_TIME_SCALE = latch(in26, trig || CTL_AMP_MOD_LOCK);\n\n// is_op_swap = ALG_OP_ROUTING >= 0;\n// is_op_pwm = ALG_OP_ROUTING < 0;\n// mod_pwm = is_op_pwm ? scale(ALG_OP_ROUTING, -1, 0, 0.05, 0.5) : 0;\r\nis_op_swap = 1;\r\nis_op_pwm = 0;\r\nmod_pwm = 0;\n// mod_pwm = is_op_pwm ? 0.5 : 0;\nmod_freq = note_freq * CTL_MOD_RATIO;\ncar_freq = note_freq;\n\n// mod operator\nmod_osc = iso_op(trig, mod_freq, ALG_MOD_FB, 0);\nmod_osc_detuned = iso_op(\n\ttrig,\n\tis_op_swap ? car_freq : mod_freq,\n\tALG_MOD_FB,\n\tmod_pwm\n);\nmod_op = mix(mod_osc, mod_osc_detuned, ALG_OP_ROUTING);\nmod_env = iso_mod_envelope(trig, ALG_MOD_ENV, CTL_TIME_SCALE);\nmod_op *= mod_env;\n\n// carrier operator\ncar_osc = iso_op(trig, car_freq, ALG_CAR_FB * mod_op, mod_op * CTL_MOD_AMT);\ncar_osc_detuned = iso_op(\n\ttrig,\n\tis_op_swap ? mod_freq : car_freq,\n\tALG_CAR_FB * mod_op,\n\tmod_op * CTL_MOD_AMT + mod_pwm\n);\ncar_op = mix(car_osc, car_osc_detuned, ALG_OP_ROUTING);\ncar_env = iso_car_envelope(trig, ALG_CAR_ENV, CTL_TIME_SCALE);\ncar_op *= car_env;\n\n// global\namp_env = ar(trig, 1, CTL_AMP_ATK * CTL_TIME_SCALE, CTL_AMP_REL * CTL_TIME_SCALE, 1);\r\nvelocity_amp = latch(velocity * 100 / 127 / 8, trig);\r\npan_left = latch(noise() * 0.5 + 0.5, trig);\nout1 = amp_env;\nout2 = pan_left * amp_env * car_op * velocity_amp;\r\nout3 = (1 - pan_left) * amp_env * car_op * velocity_amp;\n"
+										"fontsize" : 12.0,
+										"numinlets" : 28,
+										"fontname" : "<Monospaced>",
+										"numoutlets" : 3,
+										"fontface" : 0,
+										"code" : "// ---------- Basic DSP blocks ----------\n\n\n/**\n * Attack-release envelope from Lode - https://github.com/fors-fm/lode\n */\nar(trig, gate, attack, release, release_lin_exp) {\n\tHistory env(0), stage(0),\n\t\t\tatk_rate(0), atk_coeff(0), atk_offset(0),\n\t\t\trel_rate(0), rel_coeff(0), rel_slope(0), rel_offset(0);\n\t\n\tif (change(attack) != 0) {\n\t\t// time in seconds\n\t\tatk_rate = samplerate * attack;\n\t\t\n\t\t// calculate coefficients\n\t\tatk_offset = 1 / atk_rate;\n\t}\n\t\n\tif (change(release) != 0 || change(release_lin_exp) != 0) {\n\t\t// time in seconds\n\t\trel_rate = samplerate * release;\n\t\t\n\t\t// slope 0 = linear, slope -n = log/exp\n\t\trel_slope = exp(-8 * release_lin_exp);\n\t\t\n\t\t// calculate coefficients\n\t\trel_coeff = exp(-log((1 + rel_slope) / rel_slope) / rel_rate);\n\t\t// rel_offset = -rel_slope * (1 - rel_coeff);\n\t}\n\t\n\tif (trig) {\n\t\trel_offset = -rel_slope * (1 - rel_coeff);\n\n\t\t// reset & trigger envelope\n\t\tstage = 1;\n\t}\t\n\n\t// stage 0 = idle, 1 = attack, 2 = decay\n\tif (stage == 0) {\n\t\tenv = 0;\n\t} else if (stage == 1) {\n\t\tenv = atk_offset + env;\n\t\t\n\t\tif (!gate) {\n\t\t\tstage = 2;\n\t\t}\n\t\t\n\t\tif (env >= 1 || attack <= 0) {\n\t\t\tenv = 1;\n\t\t\tstage = 2;\n\t\t}\n\t} else {\n\t\tenv = rel_offset + env * rel_coeff;\n\t\t\n\t\tif (env <= 0 || release <= 0) {\n\t\t\tenv = 0;\n\t\t\tstage = 0;\n\t\t}\n\t}\n\treturn env;\n}\n\nar_loop(trig, gate, attack, release, release_lin_exp) {\n\tHistory trigged(0), env(0);\n\t\n\tif (trig) trigged = 1;\n\tif (!gate) trigged = 0;\n\n\ttrig_loop = trig || gate && env == 0;\n\tenv = ar(trig_loop, gate, attack, release, release_lin_exp);\n\treturn env, trig_loop;\n}\n\n/**\n * Attack-hold-release envelope from Lode - https://github.com/fors-fm/lode\n */\nahr(trig, gate, attack, release) {\n\tHistory env(0), stage(0), trigged(0), gating(0),\n\t\t\tatk_rate(0), atk_coeff(0), atk_offset(0),\n\t\t\trel_rate(0), rel_coeff(0), rel_offset(0);\n\t\t\n\tif (trig) {\n\t\tif (gate && trigged) {\n\t\t\t// do nothing\n\t\t} else {\n\t\t\ttrigged = 1;\n\t\t\t\n\t\t\t// rate in seconds\n\t\t\tatk_rate = samplerate * attack;\n\t\t\trel_rate = samplerate * release;\n\t\t\n\t\t\t// slope 0 = linear, slope -n = log/exp\n\t\t\trel_slope = exp(-8);\n\t\t\n\t\t\t// calculate coefficients\n\t\t\tatk_offset = 1 / atk_rate;\n\t\t\n\t\t\trel_coeff = exp(-log((1 + rel_slope) / rel_slope) / rel_rate);\n\t\t\trel_offset = -rel_slope * (1 - rel_coeff);\n\t\t\n\t\t\t// reset & trigger envelope\n\t\t\tstage = 1;\n\t\t}\n\t}\t\n\n\t// stage 0 = idle, 1 = attack, 2 = decay\n\tif (stage == 0) {\n\t\tenv = 0;\n\t} else if (gate && trigged) {\n \t\tif (stage == 1) {\n\t\t\tenv = atk_offset + env;\n\t\t\n\t\t\tif (env >= 1 || attack <= 0) {\n\t\t\t\tenv = 1;\n\t\t\t\tstage = 2;\n\t\t\t}\n\t\t} else {\n\t\t\tenv = env;\n\t\t}\n\t} else {\n\t\ttrigged = 0;\n\t\t\n\t\tenv = rel_offset + env * rel_coeff;\n\t\t\n\t\tif (env <= 0 || release <= 0) {\n\t\t\tenv = 0;\n\t\t\tstage = 0;\n\t\t}\n\t} \n\treturn env, trigged;\n}\n\n// branchless phasor - from Lode\nph(freq) {\n\tHistory phase(0);\n\t\n\tinc = freq / samplerate;\n\t\n\tphase += inc;\n\tphase -= phase >= 1;\n\t\n\treturn phase;\n}\n\n// s-curve - from Glänta\ncurve(x) { return x / (x + (1 - 1 / x) * (x - 1)); }\n\n// one-shot pendulum ramp - from Glänta\nseesaw(trig, length) {\n\tHistory phase(0), stage(0), done(0);\n\t\n\tinc = 1 / length;\n\t\n\tif (trig) {\n\t\tphase = 1;\n\t\tstage = 1;\n\t\tdone = 0;\n\t}\n\tif (stage == 1) {\n\t\tphase -= inc;\n\t\t\n\t\tif (phase <= 0) {\n\t\t\tstage = 2;\n\t\t}\n\t}\n\tif (stage == 2) {\n\t\tphase += inc;\n\t\t\n\t\tif (phase >= 1) {\n\t\t\tstage = 0;\n\t\t\tdone = 1;\n\t\t}\n\t}\n\treturn phase, done;\n}\n\n// ---------- Iso-specific blocks ----------\n\n\n/**\n * Morphable looping envelope.\n */\niso_mod_envelope(trig, shape, time_scale) {\n\tHistory attack(0), release(0), release_lin_exp(0);\n\t\n\tif (change(shape) != 0 || change(time_scale) != 0) {\n\t\tattack = (0.2 + 0.18 * cycle(2 * shape - 0.25, index=\"phase\")) * time_scale;\n\t\trelease = (0.6 + 0.45 * cycle(3.42 * shape - 0.02, index=\"phase\")) * time_scale;\n\t\trelease_lin_exp = 0.5 + 0.5 * cycle(1.283 * shape + 0.504, index=\"phase\");\n\t}\n\t\n\tenv = ar_loop(trig, 1, attack, release, 0.1);\n\n\treturn mix(1 - env, 1, shape);\n}\n\n/**\n * Morphable looping envelope.\n */\niso_car_envelope(trig, shape, time_scale) {\n\tHistory attack(0), release(0), release_lin_exp(0);\n\t\n\tif (change(shape) != 0 || change(time_scale) != 0) {\n\t\tattack = (0.3 + 0.26 * cycle(2.2 * shape + 0.166, index=\"phase\")) * time_scale;\n\t\trelease = (1.4 + 0.65 * cycle(1.982 * shape - 0.143, index=\"phase\")) * time_scale;\n\t\trelease_lin_exp = 0.6 + 0.4 * cycle(1.756 * shape - 0.127, index=\"phase\");\n\t}\n\t\n\tenv = ar_loop(trig, 1, attack, release, 0.1);\n\n\tscaled_env = selector(\n\t\tint(2 * shape + 1),\n\t\tmix(1 - env, 1, 2 * shape),\n\t\tmix(1, env, 2 * shape - 1)\n\t);\n\treturn scale(scaled_env, 0, 1, 0.4, 1);\n}\n\niso_op(trig, freq, fb_amt, mod) {\n\tHistory phase(0);\n\tphase *= 1 - trig;\n\tphase = phasor(freq, trig) + cycle(phase - 0.25, index=\"phase\") * fb_amt;\n\treturn cycle(phase - 0.25 + mod, index=\"phase\");\n}\n\niso_mix_oscs(osc, osc_detuned, op_routing) {\n\tif (op_routing >= 0) {\n\t\t// OP Swap\n\t\treturn mix(osc, osc_detuned, op_routing);\n\t} else {\n\t\t// PWM\n\t\treturn osc - osc_detuned;\n\t}\n}\n\n// Trig & de-clicking\ntrig_fade, fade_done = seesaw(in1 > 0, 8);\ntrig = delta(change(trig_fade)) > 0; // change(trig_fade) > 0 ?\ntrig_damp = curve(trig_fade);\n\n// Latched parameters\n// gate = in2;\nnote_freq = in3;\nvelocity = latch(latch(in1, in1) * 100 / 127 / 8, trig);\n// mpe_press = in5;\n// mpe_slide = in6;\n\nALG_MOD_LOCK = int(in16);\nALG_MOD_FB = latch(in11, trig || ALG_MOD_LOCK);\nALG_CAR_FB = latch(in12, trig || ALG_MOD_LOCK);\nALG_MOD_ENV = latch(in13, trig || ALG_MOD_LOCK);\nALG_CAR_ENV = latch(in14, trig || ALG_MOD_LOCK);\nALG_OP_ROUTING = latch(in15, trig || ALG_MOD_LOCK);\n\nCTL_MOD_MOD_LOCK = int(in28);\nCTL_MOD_AMT = latch(in21, trig || CTL_MOD_MOD_LOCK);\nCTL_MOD_RATIO = latch(in22, trig || CTL_MOD_MOD_LOCK);\n\nCTL_AMP_MOD_LOCK = int(in27);\nCTL_AMP_ATK = latch(in24, trig || CTL_AMP_MOD_LOCK);\nCTL_AMP_REL = latch(in25, trig || CTL_AMP_MOD_LOCK);\nCTL_TIME_SCALE = latch(in26, trig || CTL_AMP_MOD_LOCK);\n\n// is_op_swap = ALG_OP_ROUTING >= 0;\n// is_op_pwm = ALG_OP_ROUTING < 0;\n// mod_pwm = is_op_pwm ? scale(ALG_OP_ROUTING, -1, 0, 0.05, 0.5) : 0;\nis_op_swap = 1;\nis_op_pwm = 0;\nmod_pwm = 0;\n// mod_pwm = is_op_pwm ? 0.5 : 0;\nmod_freq = note_freq * CTL_MOD_RATIO;\ncar_freq = note_freq;\n\n// mod operator\nmod_osc = iso_op(trig, mod_freq, ALG_MOD_FB, 0);\nmod_osc_detuned = iso_op(\n\ttrig,\n\tis_op_swap ? car_freq : mod_freq,\n\tALG_MOD_FB,\n\tmod_pwm\n);\nmod_op = mix(mod_osc, mod_osc_detuned, ALG_OP_ROUTING);\nmod_env = iso_mod_envelope(trig, ALG_MOD_ENV, CTL_TIME_SCALE);\nmod_op *= mod_env;\n\n// carrier operator\ncar_osc = iso_op(trig, car_freq, ALG_CAR_FB * mod_op, mod_op * CTL_MOD_AMT);\ncar_osc_detuned = iso_op(\n\ttrig,\n\tis_op_swap ? mod_freq : car_freq,\n\tALG_CAR_FB * mod_op,\n\tmod_op * CTL_MOD_AMT + mod_pwm\n);\ncar_op = mix(car_osc, car_osc_detuned, ALG_OP_ROUTING);\ncar_env = iso_car_envelope(trig, ALG_CAR_ENV, CTL_TIME_SCALE);\ncar_op *= car_env;\n\n// global amplitude\namp_env = ar(trig, 1, CTL_AMP_ATK * CTL_TIME_SCALE, CTL_AMP_REL * CTL_TIME_SCALE, 1);\npan_left = latch(noise() * 0.5 + 0.5, trig);\n\nout1 = (amp_env + (1 - trig_fade)) != 0;\nout2 = pan_left * amp_env * car_op * velocity * trig_fade;\nout3 = (1 - pan_left) * amp_env * car_op * velocity * trig_fade;\n"
 									}
 
 								}
@@ -1512,9 +1564,9 @@
 										"maxclass" : "newobj",
 										"text" : "out 1",
 										"patching_rect" : [ 30.0, 1050.0, 35.0, 22.0 ],
+										"id" : "obj-4",
 										"numinlets" : 1,
-										"numoutlets" : 0,
-										"id" : "obj-4"
+										"numoutlets" : 0
 									}
 
 								}
@@ -1700,7 +1752,7 @@
 					"patching_rect" : [ 390.0, 450.0, 1234.0, 22.0 ],
 					"text" : "mc.gen~ @title 4-nodes @chans 32 @dumpoutlet 1",
 					"varname" : "gen",
-					"wrapper_uniquekey" : "u764002497"
+					"wrapper_uniquekey" : "u929000923"
 				}
 
 			}
@@ -2085,6 +2137,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-6", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 12 ],
 					"source" : [ "obj-6", 5 ]
 				}
@@ -2100,6 +2160,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 14 ],
+					"order" : 0,
 					"source" : [ "obj-6", 2 ]
 				}
 
@@ -2107,6 +2168,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 10 ],
+					"order" : 0,
 					"source" : [ "obj-6", 1 ]
 				}
 
@@ -2114,7 +2176,24 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 11 ],
+					"order" : 0,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 1,
+					"source" : [ "obj-6", 1 ]
 				}
 
 			}
